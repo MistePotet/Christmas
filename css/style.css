@@ -1,0 +1,611 @@
+@font-face {
+    font-family: 'minecraft';
+    src: url('minecraft.ttf');
+}
+
+* {
+    margin: auto;
+    font-family: minecraft;
+}
+
+body {
+    max-width: 1920px;
+    overflow: hidden;
+    background-image: url(../img/fondo.jpg);
+    background-size: contain;
+}
+
+@keyframes bocadillo {
+    0% {
+        opacity: 100%;
+    }
+
+    50% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes win {
+    0% {
+        opacity: 100%;
+    }
+
+    95% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+@keyframes aparicion1 {
+    0% {
+        transform: scale(0.8);
+        opacity: 0%;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 100%;
+    }
+}
+
+@keyframes aparicion2 {
+    0% {
+        opacity: 0%;
+        transform: translateX(-455px) translateY(-9100px) scale(0.8);
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translateX(-455px) translateY(-9100px) scale(1);
+    }
+}
+
+@keyframes cerrado {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+@keyframes abierto {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes postal {
+    0% {
+        transform: scale(0);
+        transform-origin: center;
+    }
+
+    100% {
+        transform: scale(1);
+        transform-origin: center;
+        opacity: 100%;
+    }
+}
+
+@keyframes boton {
+    0% {        
+        transform: scale(1);
+        transform-origin: center;
+        opacity: 100%;
+    }
+
+    20% {        
+        transform: scale(1.5);
+        transform-origin: center;
+        opacity: 100%;
+    }
+
+    100% {
+        transform: scale(0);
+        transform-origin: center;
+        opacity: 0%;
+    }
+}
+
+@keyframes feliz {
+    0% {
+        transform: scale(0);
+    }
+
+    80% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes luz {
+    0% {
+        transform: translateY(-12500px) scale(1);
+        opacity: 0%;
+    }
+
+    50% {
+        transform: translateY(-12500px) scale(1);
+        opacity: 100%;
+    }
+
+    100% {
+        transform: translateY(-12500px) scale(1);
+        opacity: 0%;
+    }
+}
+
+@keyframes rober {
+    0% {
+        transform: translateX() scale(0.5);
+    }
+
+    100% {
+        transform: translateX(2600px);
+    }
+}
+
+@keyframes nieve2 {
+    0% {
+        transform: translateY(-14300px) scale(1.2);
+        opacity: 0%;
+    }
+
+    100% {
+        transform: translateY(-14300px) scale(1.2);
+        opacity: 100%;
+    }
+}
+
+@keyframes negro {
+    0% {
+        opacity: 0%;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 93%;
+        transform: scale(1);
+    }
+}
+
+@keyframes creditos {
+    0% {
+        transform: translateY(0px);
+    }
+
+    90% {
+        transform: translateY(-1020px);
+    }
+
+    100% {
+        transform: translateY(-1000px);
+    }
+}
+
+@keyframes azul {
+    0% {
+        opacity: 100%;
+        transform: scale(1);
+    }
+
+    90% {
+        opacity: 100%;
+        transform: scale(1);
+    }
+
+    95% {
+        opacity: 0%;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0%;
+        transform: scale(0);
+    }
+}
+
+@keyframes verde {
+    0% {
+        opacity: 100%;
+        transform: scale(1);
+    }
+
+    90% {
+        opacity: 100%;
+        transform: scale(1);
+    }
+
+    95% {
+        opacity: 0%;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0%;
+        transform: scale(0);
+    }
+}
+
+@keyframes rojo {
+    0% {
+        opacity: 100%;
+        transform: scale(1);
+    }
+
+    90% {
+        opacity: 100%;
+        transform: scale(1);
+    }
+
+    95% {
+        opacity: 0%;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0%;
+        transform: scale(0);
+    }
+}
+
+@keyframes morado {
+    0% {
+        opacity: 100%;
+        transform: scale(1);
+    }
+
+    90% {
+        opacity: 100%;
+        transform: scale(1);
+    }
+
+    95% {
+        opacity: 0%;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0%;
+        transform: scale(0);
+    }
+}
+
+@keyframes mano_sobre {
+    0% {
+        transform: scale(1.2) translateX(1670px) translateY(-7250px);
+        opacity: 100%;
+    }
+
+    60% {
+        transform: scale(1.2) translateX(640px) translateY(-7250px);
+    }
+
+    80% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+@keyframes mano {
+    0% {
+        opacity: 0%;
+    }
+
+    15% {
+        transform: scale(1.2) translateX(640px) translateY(-7745px);   
+        opacity: 100%;     
+    }
+
+    100% {
+        transform: scale(1.2) translateX(1670px) translateY(-7745px);
+        opacity: 100%;
+    }
+}
+
+#gramola {
+    transform: translateY(-5290px) translateX(-930px) scale(1.1);
+}
+
+#bocadillo {
+    transform: translateY(-5480px) translateX(-30px) scale(0.3);
+    animation: bocadillo 3s infinite linear;
+}
+
+#selector3 {
+    transform: translateY(-6400px);
+    display: block;
+}
+
+#elije {
+    transform: translateX(630px) translateY(-7250px);
+    display: block;
+    font-size: 50px;
+}
+
+#elije2 {
+    transform: translateX(720px) translateY(-7200px);
+    display: block;
+    font-size: 30px;
+}
+
+#obj1 {
+    max-width: 100px;
+    transform: translateX(-400px) translateY(-7100px);
+    display: block;
+    font-size: 50px;
+    text-align: center;
+}
+
+#obj2 {
+    max-width: 100px;
+    transform: translateX(-150px) translateY(-7153px);
+    display: block;
+    font-size: 50px;
+    text-align: center;
+}
+
+#obj3 {
+    max-width: 100px;
+    transform: translateX(100px) translateY(-7206px);
+    display: block;
+    font-size: 50px;
+    text-align: center;
+}
+
+#obj4 {
+    max-width: 100px;
+    transform: translateX(400px) translateY(-7263px);
+    display: block;
+    font-size: 50px;
+    text-align: center;
+}
+
+#obj5 {
+    max-width: 400px;
+    transform: translateX(-275px) translateY(-7200px);
+    display: block;
+    font-size: 50px;
+    text-align: center;
+}
+
+#salto {
+    max-width: 400px;
+    transform: translateX(250px) translateY(-7300px);
+    display: block;
+    font-size: 50px;
+    text-align: center;
+}
+
+#nieve {
+    width: 1920px;
+    height: 937px;
+    transform: scale(1.2);
+}
+
+#pantalla {
+    transform: translateY(-2928px) translateX(389px)
+}
+
+#juego {
+    border: rgba(38, 51, 26, 0.671) 3px solid;
+    transform: translateY(-3733px) translateX(776px);
+}
+
+#gameboy {
+    transform: scale(0.65) translateY(-2220px) translateX(120px);
+}
+
+#gameOver {
+    display: none;
+    font-size: 70px;
+    transform: translateY(-7820px) translateX(760px);
+}
+
+#controles {
+    width: 650px;
+    transform: translateY(-4150px) translateX(1300px);
+}
+
+#objetivo {
+    transform: translateY(-4625px) translateX(1640px);
+    font-size: 40px;
+}
+
+#selector1 {
+    width: 290px;
+    height: 250px;
+    transform: translateY(-4910px) translateX(40px);
+}
+
+#selector2 {
+    width: 200px;
+    transform: translateY(-5370px) translateX(70px);
+}
+
+#posMarcador {
+    max-width: 250px;
+    color: black;
+    font-size: 50px;
+    transform: translateY(-5070px) translateX(-750px);
+}
+
+#marcador {
+    display: inline-flex;
+}
+
+#start {
+    color: black;
+    font-size: 50px;
+    transform: translateY(-5500px) translateX(1567px);
+}
+
+#azul {
+    width: 700px;
+    position: relative;
+    top: -6000px;
+    left: 100px;
+    transform: scale(0);
+    animation: none;
+}
+
+#verde {
+    width: 700px;
+    position: relative;
+    top: -6400px;
+    left: -300px;
+    transform: scale(0);
+    animation: none;
+}
+
+#verde2 {
+    width: 700px;
+    position: relative;
+    top: -7800px;
+    left: 1200px;
+    transform: scale(0);
+    animation: none;
+}
+
+#rojo {
+    width: 700px;
+    position: relative;
+    top: -6900px;
+    left: 800px;
+    transform: scale(0);
+    animation: none;
+}
+
+#rojo2 {
+    width: 700px;
+    position: relative;
+    top: -7800px;
+    left: -700px;
+    transform: scale(0);
+    animation: none;
+}
+
+#morado {
+    width: 700px;
+    position: relative;
+    top: -6500px;
+    left: 400px;
+    transform: scale(0);
+    animation: none;
+}
+
+#mano_sobre {
+    transform: scale(1.2) translateX(640px) translateY(-7250px);
+    opacity: 0%;
+    animation: none;
+}
+
+#mano {
+    transform: scale(1.2) translateX(640px) translateY(-7745px);
+    opacity: 0%;
+    animation: none;
+}
+
+#cerrado {
+    transform: translateX(-455px) translateY(-9100px);
+    width: 600px;
+    animation: none;
+    opacity: 0%;
+}
+
+#abierto {
+    transform: translateX(662px) translateY(-8172px);
+    width: 600px;
+    opacity: 0%;
+    animation: none;
+}
+
+#postal {
+    opacity: 100%;
+    transform: scale(0);
+    position: relative;
+    top: -10060px;
+    animation: none;
+}
+
+
+#boton {
+    border-radius: 30%;
+    border: red 5px solid;
+    opacity: 0%;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 915px;
+    top: -10480px;
+    animation: none;
+}
+
+#win {
+    transform: translateY(-8750px) translateX(825px);
+    font-size: 50px;
+    animation: none;
+    opacity: 0%;
+}
+
+
+#feliz {
+    transform: scale(0);
+    position: relative;
+    top: -11400px;
+    animation: none;
+}
+
+#luz {
+    transform: translateY(-12500px) scale(0);
+    opacity: 0%;
+    animation: none;
+}
+
+#rober {
+    position: relative;
+    left: -700px;
+    top: -13200px;
+    transform: scale(0.5);
+    animation: none;
+}
+
+#nieve2 {
+    opacity: 0%;
+    width: 1920px;
+    height: 937px;
+    transform: translateY(-14300px) scale(0);
+    animation: none;
+}
+
+#negro {
+    transform: scale(0);
+    position: relative;
+    top: -15400px;
+    animation: none;
+}
+
+#creditos {
+    position: relative;
+    top: -15815px;
+    animation: none;
+}
